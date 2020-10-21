@@ -1,0 +1,56 @@
+:root {
+    font-size: 62.5%;
+    /* 10px*/
+    --primary-color: #E14B56;
+    --secondary-color: #027373;
+    --text-in-input: #C1BCCC;
+    --input-warning: #E14B56;
+    --input-background: #FAFAFC;
+    --input-border: #E6E6F0;
+    --input-enable: #027373;
+}
+
+.form-box .content .form .input-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input Form */
+
+.form-box .content .form .input-group .form-control {
+    width: 100%;
+    height: 7.2rem;
+    padding-left: 2rem;
+    border: 0.1rem solid var(--input-border);
+    box-sizing: border-box;
+    border-radius: 0.8rem;
+    font: 400 1.6rem/1 'Poppins', sans-serif;
+    outline: 0;
+    background: var(--input-background);
+    color: var(--text-in-input);
+    margin-top: 3.6rem;
+}
+/* Input Valid */
+.form-box .content .form .input-group .form-control:valid, .form-control:valid {
+    border: 1px solid var(--input-enable);
+}
+
+/* Input Invalid */
+.form-box .content .form .input-group .form-control:invalid, .form-control:invalid {
+    border: 1px solid var(--input-border);
+}
+
+/* Input Hover */
+
+.form-box .content .form .input-group .form-control:hover {
+    border: 0.1rem solid var(--input-enable);
+    transition: 300ms;
+}
+
+/* Input focus */
+
+.form-box .content .form .input-group .form-control:focus {
+    border: 0.1rem solid var(--input-enable);
+    transition: 300ms;
+}

@@ -1,0 +1,128 @@
+:root {
+    font-size: 62.5%;
+    /* 10px*/
+    --primary-color: #E14B56;
+    --secondary-color: #027373;
+    --background-color: #FFF;
+    --text-in-button: #FFF;
+    --button-disable: #E6E6F0;
+    --button-enable: #027373;
+    --button-text-mobile: #9C98A6;
+    --text-in-input: #C1BCCC;
+    --input-warning: #E14B56;
+    --input-background: #FAFAFC;
+    --input-border: #E6E6F0;
+    --input-enable: #027373;
+    --checkbox-border: #E6E6F0;
+    --checkbox-text: #9C98A6;
+    --text-title: #FFF;
+    --text-paragraph: #FFF;
+    --text-label: #9C98A6;
+    --text-footer: #9D4949;
+}
+
+/* Overlay */
+
+.overlay-box {
+    width: 72vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+
+.overlay-box .overlay {
+    width: 60rem;
+}
+
+/* Titulo Overlay */
+
+.overlay-box .overlay h2 {
+    font: 400 5.2rem/15rem 'Poppins', sans-serif;
+    color: var(--text-title);
+}
+
+/* Paragrafo Overlay */
+
+.overlay-box .overlay p {
+    font: 600 3.8rem/4.5rem 'Poppins', sans-serif;
+    letter-spacing: 0.08em;
+    color: var(--text-paragraph);
+}
+
+/* Imgs Overlay */
+
+.overlay-box .overlay .img {
+    max-width: 70%;
+    height: auto;
+}
+
+/* Form */
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 38vw;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.form-box .content {
+    margin-left: 11.3rem;
+}
+
+/* Titulo Form */
+
+.form-box .content .title h1 {
+    margin-bottom: 2rem;
+    font: 600 3.6rem/3.4rem 'Poppins', sans-serif;
+    color: var(--secondary-color);
+}
+
+/* Paragrafo Form */
+
+.form-box .content .title p {
+    width: 21.3rem;
+    margin-bottom: 4rem;
+    font: 400 1.6rem/2.6rem 'Poppins', sans-serif;
+    color: var(--text-label);
+}
+
+.form-box .content .form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label Input */
+
+.form-box .content .form .input-group label {
+    position: absolute;
+    left: 2rem;
+    top: 6.2rem;
+    font: 400 1.8rem/2rem 'Poppins', sans-serif;
+    color: #ACA8B6;
+    transition: 300ms;
+    cursor: text;
+}
+
+.input-focused {
+    top: 4.5rem !important;
+    font-size: 1.2rem !important;
+    transition: 300ms;
+}
+
+/* Focus */
+
+.form-box .content .form footer {
+    text-align: end;
+}
+
+.form-box .content .form footer p, a {
+    font: 400 1.2rem/2.4rem 'Poppins', sans-serif;
+    margin-top: 5rem;
+    color: var(--text-footer);
+}

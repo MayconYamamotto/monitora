@@ -1,0 +1,38 @@
+:root {
+    --text-in-button: #FFF;
+    --button-disable: #E6E6F0;
+    --button-enable: #027373;
+    --button-text-mobile: #9C98A6;
+}
+
+/* Button Form */
+
+.form-box .content .form button {
+    height: 5.5rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    font: 600 1.6rem/1 'Archivo', sans-serif;
+    text-align: center;
+    color: var(--text-in-button);
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.form:valid .button {
+    background: var(--button-enable);
+}
+
+.form:invalid .button {
+    background: var(--button-disable);
+}
+
+/* Hover */
+
+.form-box .content .form:valid button:hover {
+    background: var(--button-enable);
+}
+
+.form-box .content .form:invalid button:hover {
+    background: var(--button-disable);
+    cursor: no-drop;
+}

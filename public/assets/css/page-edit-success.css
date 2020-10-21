@@ -1,0 +1,69 @@
+:root {
+    font-size: 62.5%;
+    /* 10px*/
+    --primary-color: #E14B56;
+    --secondary-color: #A43131;
+    --text-title: #FFF; 
+    --text-paragraph: #EDA2A2; 
+    --button-enable: #027373;
+    --button-text: #FFF;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/background.svg);
+    background-color: var(--primary-color);
+}
+
+.done-box {
+    text-align: center;
+}
+
+.done-box h1 {
+    margin: 5.5rem 0 2.4rem 0;
+    font: 700 5.4rem/4.2rem 'Archivo', sans-serif;
+    color: var(--text-title);
+}
+
+.done-box p {
+    width: 40rem;
+    margin: auto;
+    text-align: center;
+    font: 400 1.6rem/2.6rem 'Poppins', sans-serif;
+    color: var(--text-paragraph);
+}
+
+.done-box button {
+    width: 35%;
+    height: 5.5rem;
+    border-radius: 8px;
+    font: 600 1.6rem/1 'Archivo', sans-serif;
+    text-align: center;
+    background: var(--button-enable);
+    color: var(--button-text);
+    transition: 300ms;
+    cursor: pointer;
+}
+
+@media screen and (max-width:530px) {
+    :root {
+        font-size: 62.5%;
+    }
+    .done-box img {
+        width: 4.8rem;
+        height: 4.8rem;
+    }
+    .done-box h1 {
+        font: 700 3.4rem/4.2rem 'Archivo', sans-serif;
+    }
+    .done-box p {
+        display: none;
+    }
+    .done-box button {
+        margin: 0;
+        width: 60%;
+    }
+
+}

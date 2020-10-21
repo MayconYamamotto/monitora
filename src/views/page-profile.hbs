@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500:600;700;&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/page-profile.css">
+    <title>{{newProfile.firstName}} | Monitora</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="voltar">
+                <a href="/">
+                    <img src="/assets/img/sair.svg" alt="">
+                </a>
+            </div>
+            <div class="my-profile">
+                <p>Meu perfil</p>
+            </div>
+            <div class="menu">
+                <a href="/index">Monitora.com</a>
+            </div>
+        </div>
+
+        <div class="image-profile">
+            <img src="{{newProfile.profilePicture}}" alt="">
+            <h1>{{newProfile.firstName}} {{newProfile.lastName}}</h1>
+        </div>
+    </header>
+
+    <main>
+        <form class="form" action="">
+            <div class="content">
+                <div class="container">
+
+                    <div class="title">
+                        <h2>Seus dados</h2>
+                    </div>
+
+                    <div class="form-row">
+                    </div>
+                    <div class="form-row">
+                        <div class="col-6">
+                            <label>Nome</label>
+                            <input type="text" class="form-control" value="{{newProfile.firstName}}">
+                        </div>
+                        <div class="col-6">
+                            <label>Sobrenome</label>
+                            <input type="text" class="form-control" value="{{newProfile.lastName}}">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-8">
+                            <label>E-mail</label>
+                            <input type="email" class="form-control" value="{{newProfile.email}}">
+                        </div>
+                        <div class="col-4">
+                            <label>Whatsapp</label>
+                            <input type="text" class="form-control" value="{{newProfile.whatsapp}}">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="">Biografia <span>(Máximo 300 caracteres)</span></label>
+                        <textarea name="" id="" cols="" rows="15" maxlength="300" >{{ newProfile.biography  }}</textarea>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="container">
+                        <div>
+                            <div>
+                                <img src="/assets/img/aviso.svg" alt="">
+                            </div>
+                            <button type="submit">Salvar cadastro </button>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>

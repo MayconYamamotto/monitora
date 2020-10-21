@@ -1,0 +1,219 @@
+:root {
+    font-size: 62.5%;
+    /* 10px*/
+    --primary-color: #E14B56;
+    --secondary-color: #A43131;
+    --background-color: #FFF;
+    --text-header: #EDA2A2;
+    --text-title: #D22C2C;
+    --button-enable: #027373;
+    --button-text: #FFF;
+    --text-in-input: #9D4949;
+    --input-warning: #E14B56;
+    --input-background: #FAFAFC;
+    --input-border: #E6E6F0;
+    --input-enable: #027373;
+    --input-label: #9C98A6;
+}
+
+/* Flex Container */
+
+header {
+    background-color: var(--primary-color);
+    height: 70vh;
+}
+
+header .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header .nav div {
+    margin-top: 2rem;
+}
+
+header .my-profile p {
+    font: 500 1.6rem/1.7rem 'Archivo', sans-serif;
+    color: var(--text-header);
+}
+
+header .menu a {
+    font: 500 1.6rem/2.6rem 'Archivo', sans-serif;
+    color: var(--text-header);
+    text-decoration: none;
+}
+
+header .image-profile {
+    display: block;
+    flex-direction: row;
+    margin-top: 5rem;
+}
+
+header .image-profile img {
+    display: flex;
+    margin: 0 auto;
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+}
+
+header .image-profile h1 {
+    margin: 2rem 0 2rem;
+    font: 700 3.6rem/2.5rem 'Archivo', sans-serif;
+    color: var(--background-color);
+    text-align: center;
+}
+
+main .content {
+    margin: -9rem auto;
+    background-color: var(--background-color);
+    border-radius: 0.8rem;
+    width: 55%;
+    z-index: 10;
+    height: 100%;
+}
+
+main .content .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.title h2 {
+    color: var(--text-title);
+    margin-bottom: 4rem;
+    font: 600 2.4rem/1 'Archivo', sans-serif;
+    padding-top: 4.5rem;
+}
+
+.form .content .container .input-group label, .form-row .col-6 label, .col-8 label, .col-4 label {
+    font: 400 1.4rem/2.4rem 'Poppins', sans-serif;
+    color: var(--input-label);
+    margin-top: 2.4rem;
+}
+
+.form-row {
+    display: flex;
+    column-gap: 3rem;
+    margin-top: 2.4rem;
+}
+
+.col-4 {
+    width: 35%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-8 {
+    width: 65%;
+}
+
+.form .content .container .form-row .col-6 .form-control, .col-8 .form-control, .col-4 .form-control {
+    width: 100%;
+    height: 5.5rem;
+    padding-left: 2rem;
+    border: 0.1rem solid var(--input-border);
+    box-sizing: border-box;
+    border-radius: 0.8rem;
+    font: 400 1.6rem/1 'Poppins', sans-serif;
+    outline: 0;
+    background: var(--input-background);
+    color: var(--text-in-input);
+}
+
+.form .content .container .input-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input Form */
+
+.form .content .container .input-group .form-control {
+    width: 100%;
+    height: 7.2rem;
+    padding-left: 2rem;
+    border: 0.1rem solid var(--input-border);
+    box-sizing: border-box;
+    border-radius: 0.8rem;
+    font: 400 1.6rem/1 'Poppins', sans-serif;
+    outline: 0;
+    background: var(--input-background);
+    color: var(--text-in-input);
+}
+
+.input-group label span {
+    font: 400 1.2rem/2.4rem 'Poppins', sans-serif;
+}
+
+.form .content .container .input-group textarea {
+    width: 100%;
+    padding: 1.6rem 2.4rem;
+    border: 0.1rem solid var(--input-border);
+    box-sizing: border-box;
+    border-radius: 0.8rem;
+    font: 400 1.6rem/1 'Poppins', sans-serif;
+    outline: 0;
+    resize: vertical;
+    background: var(--input-background);
+    color: var(--text-in-input);
+}
+
+footer {
+    margin: 12rem 0;
+}
+
+footer .container {
+    width: 90%;
+}
+
+footer .container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div button {
+    height: 5.5rem;
+    width: 30%;
+    border-radius: 8px;
+    font: 400 1.5rem/2.6rem 'Archivo', sans-serif;
+    text-align: center;
+    background-color: var(--button-enable);
+    color: var(--button-text);
+    transition: 300ms;
+    cursor: pointer;
+}
+
+@media screen and (max-width:900px) {
+    :root {
+        font-size: 60%;
+    }
+    header {
+        height: 50vh;
+    }
+    main .content {
+        margin: 0 auto;
+        background-color: var(--background-color);
+        border-radius: 0.8rem;
+        width: 80%;
+        z-index: 10;
+        height: 100%;
+    }
+    .form-row {
+        display: block;
+        margin-top: 2.4rem;
+    }
+    .col-4, .col-6, .col-8 {
+        width: 100%;
+    }
+    footer .container div div img {
+        display: none;
+    }
+    footer div button {
+        height: 5.5rem;
+        width: 100%;
+    }
+}
